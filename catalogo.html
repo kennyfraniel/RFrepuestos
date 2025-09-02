@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catálogo – RF Repuestos</title>
+<meta name="description" content="Catálogo de autopartes. Renault, Fiat, Citroën y Peugeot. Compra por WhatsApp." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="./">RF <span>repuestos</span></a>
+<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+<nav class="site-nav" data-nav>
+<a href="./">Inicio</a>
+<a class="active" href="catalogo.html">Catálogo</a>
+<a href="index.html#contacto">Contacto</a>
+</nav>
+</div>
+</header>
+
+
+<main class="catalog">
+<div class="container">
+<h1 class="section-title">Catálogo</h1>
+<div class="filters">
+<div class="filters-left">
+<div class="search">
+<input id="q" type="search" placeholder="Buscar por pieza o modelo…" aria-label="Buscar" />
+</div>
+<fieldset class="brands-filter" role="group" aria-label="Filtrar por marca">
+<label><input type="checkbox" name="brand" value="RENAULT" checked> Renault</label>
+<label><input type="checkbox" name="brand" value="FIAT" checked> Fiat</label>
+<label><input type="checkbox" name="brand" value="CITROEN" checked> Citroën</label>
+<label><input type="checkbox" name="brand" value="PEUGEOT" checked> Peugeot</label>
+</fieldset>
+</div>
+<div class="filters-right">
+<label class="sort">
+Ordenar:
+<select id="sort">
+<option value="newest">Novedades</option>
+<option value="price-asc">Precio (menor a mayor)</option>
+<option value="price-desc">Precio (mayor a menor)</option>
+<option value="name-asc">Nombre (A–Z)</option>
+<option value="name-desc">Nombre (Z–A)</option>
+</select>
+</label>
+</div>
+</div>
+
+
+<p class="results" id="results-count">Mostrando 0 productos</p>
+<div class="grid grid-3" id="products-grid"><!-- poblado por JS --></div>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> RF Repuestos</p>
+<a class="link" href="./">Volver al inicio</a>
+</div>
+</footer>
+
+
+<a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+
+
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/products.js" defer></script>
+</body>
+</html>
