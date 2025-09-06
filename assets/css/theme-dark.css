@@ -1,0 +1,99 @@
+/* =========================
+   DARK MODE – solo colores
+   ========================= */
+
+/* 1) Variables: fondo oscuro, superficies oscuras, texto claro */
+:root{
+  --rf-bg: #0b0d12;        /* fondo global */
+  --rf-light: #12161f;     /* superficies (header, cards, secciones) */
+  --rf-dark: #eef2f7;      /* texto principal (casi blanco) */
+  --rf-muted: #9aa3b2;     /* texto secundario */
+  --rf-border: #252b3a;    /* líneas/bordes */
+  /* mantenemos tus rojos */
+  /* --rf-red: #d32f2f;  --rf-red-700: #b71c1c; */
+}
+
+/* 2) Texto y fondos globales (no tocamos layout) */
+body{ color: var(--rf-dark); background: var(--rf-bg); }
+
+/* 3) Header / Nav (mismos tamaños, solo color) */
+.site-header{ background: var(--rf-light); border-bottom: 1px solid var(--rf-border); }
+.site-nav a{ color: var(--rf-dark); text-decoration: none; }
+.site-nav a:hover, .site-nav a.active{ background: rgba(255,255,255,.06); }
+@media (max-width: 860px){
+  .site-nav{ background: var(--rf-light); border-bottom: 1px solid var(--rf-border); }
+}
+
+/* 4) Hero (mismo diseño, tonos oscuros) */
+.hero{
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(211,47,47,.18), transparent 60%),
+    var(--rf-light);
+  border-bottom: 1px solid var(--rf-border);
+}
+.hero-text p{ color: var(--rf-muted); }
+.hero-art{
+  background:
+    linear-gradient(180deg, rgba(215,34,34,.18), rgba(215,34,34,.04) 55%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 10px, transparent 10px 20px),
+    #0f131b;
+  border: 1px solid var(--rf-border);
+  box-shadow: 0 12px 32px rgba(0,0,0,.55);
+}
+
+/* 5) Marcas (mostrarlas sin gris) */
+.brand-row img{ filter: none; opacity: .95; }
+
+/* 6) Cards (mismo componente, sólo colores) */
+.card{ background: var(--rf-light); border: 1px solid var(--rf-border); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+.card-media{ background: #0f141c; }
+.card-sub{ color: var(--rf-muted); }
+.card-price{ color: var(--rf-dark); }
+.badge{
+  background: rgba(211,47,47,.12);
+  color: #ff8a8a;
+  border-color: rgba(211,47,47,.35);
+}
+
+/* 7) Botones (outline claro sobre oscuro; primary igual) */
+.btn-outline{ background: transparent; color: var(--rf-dark); border-color: #3a4153; }
+.btn-outline:hover{ background: #1a2230; }
+.btn-primary{ box-shadow: 0 6px 18px rgba(211,47,47,.3); }
+
+/* 8) Catálogo: filtros/inputs/selects */
+.catalog .filters{
+  background: rgba(20,24,33,.85);
+  backdrop-filter: saturate(1.1) blur(6px);
+  border-bottom: 1px solid var(--rf-border);
+}
+.catalog .search input, .sort select{
+  background: #0f141d; color: var(--rf-dark); border: 1px solid var(--rf-border);
+}
+.catalog .search input::placeholder{ color: #7f8797; }
+.catalog .search input:focus, .sort select:focus{
+  border-color: #3a4153;
+  box-shadow: 0 0 0 4px rgba(211,47,47,.15);
+}
+.brands-filter label{
+  background: #0f141d; border: 1px solid var(--rf-border); color: var(--rf-dark);
+}
+.brands-filter label:has(input:checked){
+  background: rgba(211,47,47,.12);
+  border-color: rgba(211,47,47,.35);
+  color: #ff7a7a;
+}
+.results{ color: var(--rf-muted); }
+
+/* 9) Contacto/Footer (misma estructura, tonos oscuros) */
+.contact{ background: var(--rf-light); border-top: 1px solid var(--rf-border); border-bottom: 1px solid var(--rf-border); }
+.site-footer{ background: var(--rf-light); border-top: 1px solid var(--rf-border); }
+.link{ color: var(--rf-red); }
+
+/* 10) WhatsApp flotante (sombra para oscuro) */
+.wa-float{ box-shadow: 0 12px 24px rgba(211,47,47,.35); }
+
+/* 11) Skeleton en oscuro (si lo usás) */
+.card-media{
+  background: linear-gradient(120deg, #111722 25%, #0c111a 45%, #111722 65%);
+  background-size: 300% 300%;
+}
