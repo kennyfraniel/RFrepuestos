@@ -75,3 +75,26 @@
 .wa-float{ animation:rf-pulse 2.4s ease-in-out infinite }
 
 @media (prefers-reduced-motion:reduce){ *{ animation:none !important; transition:none !important } }
+
+
+/* Hero – tarjeta de bienvenida (ocupa el lugar del hero-art) */
+.hero-card{
+  padding: 1.1rem 1.1rem 1.2rem;
+  border: 1px solid var(--rf-border);
+  border-radius: 18px;
+  background:
+    radial-gradient(70% 60% at 80% 0%, rgba(211,47,47,.14), transparent 70%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 10px, transparent 10px 20px),
+    var(--rf-light);
+  box-shadow: 0 20px 40px rgba(0,0,0,.35), 0 0 24px rgba(211,47,47,.15) inset;
+  display: flex; flex-direction: column; gap: .6rem;
+  min-height: 320px;
+}
+.hero-card h3{ margin:0; font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
+.logo-mini{ color: var(--rf-red); }
+.hero-points{ list-style:none; padding:0; margin:.25rem 0 .5rem; display:grid; gap:.35rem }
+.hero-points li{ color: var(--rf-dark); opacity:.92 }
+.hero-actions{ margin-top:auto; display:flex; gap:.6rem; flex-wrap:wrap }
+@media (max-width: 860px){
+  .hero-card{ min-height: 220px; }
+}
