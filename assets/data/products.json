@@ -79,7 +79,7 @@
     "model": "PARTNER 1.9",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaceitemahle.jpg",
+    "image": "assets/img/products/filtroaceitemahle.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -103,7 +103,7 @@
     "model": "206 1.4",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaceite206.jpg",
+    "image": "assets/img/products/filtroaceite206.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -115,7 +115,7 @@
     "model": "207/2008 1.4/1.6 (T",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaire207.png",
+    "image": "assets/img/products/filtroaire207.png",
     "stock": null,
     "createdAt": ""
   },
@@ -127,7 +127,7 @@
     "model": "207-30",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroairemahle.jpg",
+    "image": "assets/img/products/filtroairemahle.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -139,7 +139,7 @@
     "model": "207-2008 2008",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaire2008.jpg",
+    "image": "assets/img/products/filtroaire2008.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -163,7 +163,7 @@
     "model": "C3",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroairec3.jpg",
+    "image": "assets/img/products/filtroairec3.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -175,11 +175,10 @@
     "model": "PALIO ADVENTUR",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroairepalio.jpg",
+    "image": "assets/img/products/filtroairepalio.jpg",
     "stock": null,
     "createdAt": ""
   },
-  
   {
     "id": "1027364-E",
     "sku": "1027364-E",
@@ -188,7 +187,7 @@
     "model": "PALIO/S",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaceitecartuchopalio.jpg",
+    "image": "assets/img/products/filtroaceitecartuchopalio.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -200,11 +199,10 @@
     "model": "PUNTO 1.3 JTD",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroairemahlepalio.jpg",
+    "image": "assets/img/products/filtroairemahlepalio.jpg",
     "stock": null,
     "createdAt": ""
   },
-
   {
     "id": "1444XRO-H",
     "sku": "1444XRO-H",
@@ -213,11 +211,10 @@
     "model": "3008",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaire3008.jpg",
+    "image": "assets/img/products/filtroaire3008.jpg",
     "stock": null,
     "createdAt": ""
   },
-
   {
     "id": "1444YVO-H",
     "sku": "1444YVO-H",
@@ -226,7 +223,7 @@
     "model": "307-30",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaire307.jpg",
+    "image": "assets/img/products/filtroaire307.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -238,7 +235,7 @@
     "model": "206",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/tapafiltro206.webp",
+    "image": "assets/img/products/tapafiltro206.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -250,11 +247,10 @@
     "model": "206-PARTN",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroairecomb.webp",
+    "image": "assets/img/products/filtroairecomb.webp",
     "stock": null,
     "createdAt": ""
   },
- 
   {
     "id": "311",
     "sku": "311",
@@ -263,7 +259,7 @@
     "model": "",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroaceitetrend.jpg",
+    "image": "assets/img/products/filtroaceitetrend.jpg",
     "stock": null,
     "createdAt": ""
   },
@@ -275,7 +271,7 @@
     "model": "",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtrobora.webp",
+    "image": "assets/img/products/filtrobora.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -299,7 +295,7 @@
     "model": "",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtrogolf.webp",
+    "image": "assets/img/products/filtrogolf.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -311,7 +307,7 @@
     "model": "",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtrogol.webp",
+    "image": "assets/img/products/filtrogol.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -323,7 +319,7 @@
     "model": "",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtromahlegol.webp",
+    "image": "assets/img/products/filtromahlegol.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -359,7 +355,7 @@
     "model": "PALIO",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtroairebosch.webp",
+    "image": "assets/img/products/filtroairebosch.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -395,7 +391,7 @@
     "model": "206",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/juegojuntas206.webp",
+    "image": "assets/img/products/juegojuntas206.webp",
     "stock": null,
     "createdAt": ""
   },
@@ -443,11 +439,10 @@
     "model": "206/PARTNER",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/tapaoring.webp",
+    "image": "assets/img/products/tapaoring.webp",
     "stock": null,
     "createdAt": ""
   },
-
   {
     "id": "6447250-S",
     "sku": "6447250-S",
@@ -456,7 +451,7 @@
     "model": "PARTNER 1I 02",
     "years": "",
     "price": null,
-    "image": "/assets/img/products/filtrohabaticulo.webp",
+    "image": "assets/img/products/filtrohabaticulo.webp",
     "stock": null,
     "createdAt": ""
   }
