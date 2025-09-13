@@ -123,3 +123,138 @@ img{ max-width:100%; display:block }
 body, html {
   overflow-x: hidden !important;
 }
+
+/* ====== HERO: apilar en móvil (texto arriba, tarjeta abajo) ====== */
+@media (max-width: 768px) {
+  /* Forzamos layout en 1 columna */
+  .hero .hero-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: stretch;
+  }
+
+  /* Aseguramos el orden deseado */
+  .hero-text  { order: 1 !important; }
+  .hero-card  { order: 2 !important; }
+
+  /* Anchos 100% y sin rigideces previas */
+  .hero-text,
+  .hero-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    flex: initial !important;      /* por si tenían flex-basis fijo */
+  }
+
+  /* Estética “tarjeta” contenida para la derecha */
+  .hero-card {
+    border-radius: 16px;
+    padding: clamp(14px, 3.8vw, 20px);
+    overflow: hidden;              /* por si hay sombras/stripes largos */
+    /* opcional: bordecito sutil
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.06) inset;
+    */
+  }
+
+  /* Tipografías un poco más contenidas en móvil */
+  .hero h1 {
+    font-size: clamp(22px, 6vw, 28px);
+    line-height: 1.15;
+  }
+  .hero p,
+  .hero-card .muted,
+  .hero-card li {
+    font-size: clamp(14px, 3.9vw, 16px);
+  }
+
+  /* Botones a ancho completo en móvil */
+  .hero-cta .btn,
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* Separación con la sección siguiente */
+  .hero + section { margin-top: 12px; }
+}
+
+/* ===== Marcas (base) ===== */
+.brands {
+  padding: clamp(24px, 5vw, 56px) 0;
+}
+
+.brands .section-title {
+  margin-bottom: clamp(12px, 3vw, 24px);
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(12px, 3vw, 32px);
+  flex-wrap: wrap;                 /* no rompe en desktop chico */
+}
+
+.brand-row img {
+  display: block;
+  max-width: 160px;                /* techo en desktop */
+  max-height: 56px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: .85;
+  transition: filter .25s ease, opacity .25s ease, transform .25s ease;
+}
+
+.brand-row img:hover {
+  filter: none;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* ===== Tablet (<= 992px) ===== */
+@media (max-width: 992px) {
+  .brand-row {
+    justify-content: center;       /* centra mejor en tablet */
+    gap: 20px 28px;
+  }
+  .brand-row img {
+    max-width: 130px;
+    max-height: 50px;
+  }
+}
+
+/* ===== Móvil (<= 768px): 2x2 bien cuadrado ===== */
+@media (max-width: 768px) {
+  .brand-row {
+    display: grid;                 /* pasamos a grilla */
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+    gap: 14px;
+    justify-items: center;
+  }
+  .brand-row img {
+    max-width: 120px;
+    max-height: 44px;
+    width: 100%;
+    /* “tarjetita” sin tocar el HTML */
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.06) inset;
+  }
+}
+
+/* ===== Teléfonos pequeños (<= 400px) ===== */
+@media (max-width: 400px) {
+  .brand-row {
+    grid-template-columns: repeat(2, minmax(90px, 1fr));
+    gap: 10px;
+  }
+  .brand-row img {
+    max-width: 100px;
+    max-height: 38px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+}
