@@ -120,3 +120,6 @@ img{ max-width:100%; display:block }
 
 
 
+body, html {
+  overflow-x: hidden !important;
+}
