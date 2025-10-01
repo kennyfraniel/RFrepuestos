@@ -419,18 +419,7 @@
     "stock": null,
     "createdAt": ""
   },
-  {
-    "id": "104400-N",
-    "sku": "104400-N",
-    "name": "JUNTA INTERCAMBIADOR CALOR-EW10A",
-    "brand": "",
-    "model": "",
-    "years": "",
-    "price": null,
-    "image": "",
-    "stock": null,
-    "createdAt": ""
-  },
+  
   {
     "id": "1531240-T",
     "sku": "1531240-T",
@@ -454,5 +443,223 @@
     "image": "assets/img/products/filtrohabaticulo.webp",
     "stock": null,
     "createdAt": ""
+  },
+
+  {
+    "id": "101-A",
+    "sku": "101-A",
+    "name": "AMORTIGUADOR 206 Y 207 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "206 y 207",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/206207del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "102-A",
+    "sku": "102-A",
+    "name": "AMORTIGUADOR 206 Y 207 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "206 y 207",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/206207tras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "103-A",
+    "sku": "103-A",
+    "name": "AMORTIGUADOR 208 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "208",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/2082020del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "104-A",
+    "sku": "104-A",
+    "name": "AMORTIGUADOR 208 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "208",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/2082020tras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "105-A",
+    "sku": "105-A",
+    "name": "AMORTIGUADOR 208 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "208 HASTA 2020",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/208hasta2020del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "106-A",
+    "sku": "106-A",
+    "name": "AMORTIGUADOR 208 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "208 HASTA 2020",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/208hasta2020tras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "107-A",
+    "sku": "107-A",
+    "name": "AMORTIGUADOR 306 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "306",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/306del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "108-A",
+    "sku": "108-A",
+    "name": "AMORTIGUADOR 306 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "306",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/306tras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "109-A",
+    "sku": "109-A",
+    "name": "AMORTIGUADOR 307 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "307",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/307del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "110-A",
+    "sku": "110-A",
+    "name": "AMORTIGUADOR 307 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "307",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/307tras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "111-A",
+    "sku": "111-A",
+    "name": "AMORTIGUADOR 2008 Y 3008 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "2008 y 3008",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/20083008del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "112-A",
+    "sku": "112-A",
+    "name": "AMORTIGUADOR 2008 Y 3008 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "2008 y 3008",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/20083008tras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "113-A",
+    "sku": "113-A",
+    "name": "AMORTIGUADOR 308 Y 408 DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "308 Y 408",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/308408del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "114-A",
+    "sku": "114-A",
+    "name": "AMORTIGUADOR 308 Y 408 TRASERO",
+    "brand": "PEUGEOT",
+    "model": "308 Y 408",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/308408tras.jpg",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "115-A",
+    "sku": "115-A",
+    "name": "AMORTIGUADOR PARTNER DELANTERO",
+    "brand": "PEUGEOT",
+    "model": "PARTNER 1.9",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/partnerdel.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "116-A",
+    "sku": "116-A",
+    "name": "AMORTIGUADOR PARTNER TRASERO",
+    "brand": "PEUGEOT",
+    "model": "PARTNER 1.9",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/partnertras.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "117-A",
+    "sku": "117-A",
+    "name": "AMORTIGUADOR C4 CACTUS DELANTERO",
+    "brand": "CITROEN",
+    "model": "C4",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/c4del.webp",
+    "stock": null,
+    "createdAt": ""
+  },
+  {
+    "id": "118-A",
+    "sku": "118-A",
+    "name": "AMORTIGUADOR C4 CACTUS TRASERO",
+    "brand": "CITROEN",
+    "model": "C4",
+    "years": "",
+    "price": null,
+    "image": "assets/img/products/c4tras.webp",
+    "stock": null,
+    "createdAt": ""
   }
+
 ]

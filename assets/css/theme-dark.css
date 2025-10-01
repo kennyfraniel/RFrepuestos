@@ -97,3 +97,70 @@ body{ color: var(--rf-dark); background: var(--rf-bg); }
   background: linear-gradient(120deg, #111722 25%, #0c111a 45%, #111722 65%);
   background-size: 300% 300%;
 }
+
+
+/* Hero – tarjeta de bienvenida refinada (sin íconos) */
+.hero-card{
+  position: relative;
+  min-height: 320px;
+  padding: 1.1rem 1.1rem 1.2rem;
+  border-radius: 18px;
+  border: 1px solid var(--rf-border);
+  background:
+    radial-gradient(70% 60% at 80% 0%, rgba(211,47,47,.14), transparent 70%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 10px, transparent 10px 20px),
+    var(--rf-light);
+  box-shadow: 0 18px 36px rgba(0,0,0,.35), 0 0 22px rgba(211,47,47,.12) inset;
+  display: flex; flex-direction: column; gap: .65rem;
+
+  /* animación ambiente muy sutil */
+  background-size: 200% 200%, auto, auto;
+  animation: rf-ambient 18s linear infinite;
+}
+.hero-card::after{ /* halo exterior muy leve */
+  content:""; position:absolute; inset:0; pointer-events:none; border-radius:18px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.04), 0 0 38px rgba(211,47,47,.10);
+}
+
+.hero-card h3{ margin:0; font-size: clamp(1.1rem, 1.8vw, 1.35rem); }
+.logo-mini{ color: var(--rf-red); }
+.hero-card .muted{ margin-top: -.2rem; }
+
+/* Lista de puntos (sin íconos) */
+.hero-points{
+  list-style:none;
+  padding:0;
+  margin:.25rem 0 .5rem;
+  display:grid;
+  gap:.45rem;
+}
+.hero-points li{
+  display:flex; align-items:center;
+  padding:.45rem .6rem;
+  border-radius:10px;
+  background:#0f141d;
+  border:1px solid var(--rf-border);
+  color: var(--rf-dark);
+}
+
+.hero-actions{ margin-top:auto; display:flex; gap:.6rem; flex-wrap:wrap }
+
+/* Reveal suave al cargar */
+@keyframes rf-fade-up{ from{ opacity:.0; transform: translateY(8px) } to{ opacity:1; transform:none } }
+.hero .hero-text{ animation: rf-fade-up .6s ease-out both }
+.hero .hero-card{ animation: rf-fade-up .6s ease-out .08s both }
+
+/* Ambient background slow drift */
+@keyframes rf-ambient{
+  0%{ background-position: 0% 50%, 0 0, 0 0 }
+  100%{ background-position: 100% 50%, 0 0, 0 0 }
+}
+
+/* Respeto accesibilidad */
+@media (prefers-reduced-motion: reduce){
+  .hero .hero-text, .hero .hero-card{ animation: none !important }
+  .hero-card{ animation: none }
+}
+
+/* Responsive */
+@media (max-width: 860px){ .hero-card{ min-height: 220px } }

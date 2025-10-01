@@ -59,18 +59,17 @@
   }
 
   function waLink(p){
-    const phone = cfg.phone || '54911XXXXXXX';
-    const business = cfg.businessName || 'RF Repuestos';
-    const text = encodeURIComponent(
-      `Hola ${business}, quiero comprar:\n`+
-      `• ${p.name} (${p.sku})\n`+
-      `• Marca/Modelo: ${(brandLabels[p.brand]||p.brand)} – ${p.model} (${p.years})\n`+
-      `• Precio: ${formatPrice(p.price)}\n`+
-      `¿Está disponible?`
-    );
-    return `${WA_BASE}${phone}?text=${text}`;
-  }
-
+  const phone = cfg.phone || '54911XXXXXXX';
+  const business = cfg.businessName || 'RF Repuestos';
+  const brandText = brandLabels[p.brand] || p.brand;
+  const text = encodeURIComponent(
+    `Hola ${business}, quiero comprar:\n`+
+    `• ${p.name} (${p.sku})\n`+
+    `• Marca/Modelo: ${brandText} – ${p.model} (${p.years})\n`+
+    `¿Me pasás precio y disponibilidad?`
+  );
+  return `https://wa.me/${phone}?text=${text}`;
+}
   function productCard(p){
     const brandText = brandLabels[p.brand] || p.brand;
     const hasImg = p.image && p.image.trim().length > 0;
@@ -83,9 +82,9 @@
           <span class="badge">${brandText}</span>
           <h3 class="card-title">${p.name}</h3>
           <p class="card-sub">${p.model} · ${p.years}</p>
-          <p class="card-price">${formatPrice(p.price)}</p>
+            <!-- (precio eliminado) -->
           <div class="card-actions">
-            <a class="btn btn-primary" target="_blank" rel="noopener" href="${waLink(p)}">Comprar por WhatsApp</a>
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="${waLink(p)}">Consultar por WhatsApp</a>
             <a class="btn btn-outline" href="#" data-copy>Copiar datos</a>
           </div>
         </div>
@@ -103,7 +102,7 @@
         const id = card?.getAttribute('data-id');
         const p = list.find(x => x.id === id);
         if (p){
-          const text = `${p.name} (${p.sku}) - ${(brandLabels[p.brand]||p.brand)} ${p.model} ${p.years} – ${formatPrice(p.price)}`;
+          const text = `${p.name} (${p.sku}) - ${(brandLabels[p.brand]||p.brand)} ${p.model} ${p.years}`;
           navigator.clipboard.writeText(text).then(()=>{
             e.currentTarget.textContent = '¡Copiado!';
             setTimeout(()=> e.currentTarget.textContent = 'Copiar datos', 1200);
