@@ -1,62 +1,171 @@
 <!doctype html>
 <html lang="es">
+<!doctype html>
+<html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>RF Repuestos – Autopartes en Argentina</title>
-<meta name="description" content="RF Repuestos. Autopartes para Renault, Fiat, Citroën y Peugeot. Comprá por WhatsApp." />
-<link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="assets/css/theme-dark.css">  <!-- oscuro por defecto -->
-<link rel="stylesheet" href="assets/css/neon.css">        <!-- opcional; podés comentar -->
+  <!-- Configuración básica -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <title>RF Repuestos | Autopartes para Renault, Fiat, Citroën y Peugeot en Argentina</title>
+
+  <meta name="description"
+        content="RF Repuestos. Autopartes multimarca para Renault, Fiat, Citroën, Peugeot y más. Stock real, compra por WhatsApp y envíos a CABA y GBA." />
+
+  <!-- SEO / Canonical -->
+  <link rel="canonical" href="https://rfrepuestos.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Colores del navegador -->
+  <meta name="theme-color" content="#111111" />
+  <meta name="msapplication-TileColor" content="#111111" />
+
+  <!-- Favicon e íconos -->
+  <!-- Asegurate de que estos archivos existan en la raíz o ajustá las rutas -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- Si tenés un manifest, genial; si no, podés quitar esta línea -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph (para previews en WhatsApp / redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rfrepuestos.com/">
+  <meta property="og:title" content="RF Repuestos | Autopartes en Argentina">
+  <meta property="og:description"
+        content="Autopartes multimarca con stock real. Comprá por WhatsApp y recibí tu pedido en CABA y GBA.">
+  <!-- Cambiá la ruta a una imagen real tuya (1200x630 aprox) -->
+  <meta property="og:image" content="https://rfrepuestos.com/assets/img/og-rfrepuestos.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RF Repuestos | Autopartes en Argentina">
+  <meta name="twitter:description"
+        content="RF Repuestos. Autopartes para Renault, Fiat, Citroën, Peugeot y más. Stock real y compra por WhatsApp.">
+  <meta name="twitter:image" content="https://rfrepuestos.com/assets/img/og-rfrepuestos.jpg">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/theme-dark.css">
+  <link rel="stylesheet" href="assets/css/neon.css">
+
+  <!-- Datos estructurados básicos (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoPartsStore",
+    "name": "RF Repuestos",
+    "url": "https://rfrepuestos.com/",
+    "image": "https://rfrepuestos.com/assets/img/og-rfrepuestos.jpg",
+    "description": "Autopartes multimarca para Renault, Fiat, Citroën, Peugeot y más. Stock real y compra por WhatsApp.",
+    "areaServed": {
+      "@type": "Place",
+      "name": "CABA y GBA"
+    }
+  }
+  </script>
 </head>
+
 <body>
 <header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="./">RF <span>repuestos</span></a>
-<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-<nav class="site-nav" data-nav>
-<a href="./">Inicio</a>
-<a href="catalogo.html">Catálogo</a>
+  <div class="header-main">
+    <div class="container header-inner">
 
-</nav>
-</div>
+      <!-- Logo -->
+      <a href="index.html" class="brand">
+        <span class="brand-mark">RF</span>
+        <span class="brand-text">
+          <span class="brand-title">Repuestos</span>
+          <span class="brand-subtitle">Autopartes</span>
+        </span>
+      </a>
+
+      <!-- NAV a la derecha -->
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="catalogo.html" class="nav-link">Catálogo</a>
+      </nav>
+
+      <!-- Toggle mobile -->
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Menú mobile -->
+    <nav class="nav-mobile">
+      <a href="index.html" class="nav-mobile-link">Inicio</a>
+      <a href="catalogo.html" class="nav-mobile-link">Catálogo</a>
+    </nav>
+  </div>
 </header>
+
+
 
 
 <main>
 <!-- Hero -->
 <section class="hero">
-<div class="container hero-inner">
-<div class="hero-text">
-<h1>Autopartes de confianza para tu <span class="accent">Volkswagen, Fiat, Citroën, Peugeot</span> y <span class="accent">otras marcas</span></h1>
-<p>Stock real, precios en pesos, compra rápida por WhatsApp. Envíos a CABA y GBA.</p>
-<div class="hero-cta">
-<a class="btn btn-primary" href="catalogo.html">Ver catálogo</a>
-</div>
-</div>
-<!-- Antes: <div class="hero-art"></div> -->
-<aside class="hero-card">
-  <h3>¡Bienvenido a <span class="logo-mini">RF</span> Repuestos!</h3>
-  <p class="muted">Autopartes multimarca (originales y alternativas) con stock real. Todo lo que tu auto necesita, sin vueltas. </p>
+  <div class="hero-bg"></div>
 
-  <ul class="hero-points">
-    <li>🚚 Envíos en el día (CABA) · 24/48 hs (GBA)</li>
-    <li>🧾 Factura A/B · Medios de pago flexibles</li>
-    <li>💬 Comprá por WhatsApp, sin carrito</li>
-  </ul>
+  <div class="hero-overlay"></div>
 
-  <div class="hero-actions">
-    <a class="btn btn-outline" id="cta-whatsapp-hero" target="_blank" rel="noopener">WhatsApp ahora</a>
+  <div class="hero-inner container">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Autopartes en Argentina</p>
+
+      <h1 class="hero-title">
+        Autopartes de confianza para tu Volkswagen, Fiat, Citroën, Peugeot y otras marcas
+      </h1>
+
+      <p class="hero-subtitle">
+        Stock real, precios en pesos y compra rápida por WhatsApp. Envíos a CABA y GBA.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="catalogo.html" class="btn btn-primary">
+          Ver catálogo
+        </a>
+        <a href="https://wa.me/TU_NUMERO?text=Hola%20vengo%20de%20la%20web%20de%20RF%20Repuestos%20y%20quiero%20hacer%20una%20consulta"
+           class="btn btn-outline" target="_blank" rel="noopener">
+          WhatsApp ahora
+        </a>
+      </div>
+
+      <ul class="hero-badges">
+        <li>Envíos en el día (CABA) · 24/48 hs (GBA)</li>
+        <li>Factura A/B · Medios de pago flexibles</li>
+        <li>Autopartes multimarca, originales y alternativas</li>
+      </ul>
+    </div>
+
+    <aside class="hero-card">
+      <p class="hero-card-label">Ejemplo de pedido</p>
+      <h2 class="hero-card-title">Kit de distribución completo</h2>
+      <p class="hero-card-meta">Volkswagen / Fiat / Peugeot</p>
+
+      <ul class="hero-card-list">
+        <li>✔️ Stock real en depósito</li>
+        <li>✔️ Asesoramiento por WhatsApp</li>
+        <li>✔️ Envío a CABA y GBA</li>
+      </ul>
+
+      <a href="https://wa.me/TU_NUMERO?text=Hola%20me%20interesa%20el%20kit%20de%20distribuci%C3%B3n"
+         class="hero-card-cta" target="_blank" rel="noopener">
+        Pedir este estilo de repuesto por WhatsApp
+      </a>
+    </aside>
   </div>
-</aside>
-
-</div>
 </section>
+
 
 
 <!-- Marcas -->
@@ -89,4 +198,7 @@
 <script src="assets/js/wa-init.js" defer></script>
 
 <script src="assets/js/featured.js" defer></script>
+
+<script src="assets/js/main.js"></script>
+
 </html>
