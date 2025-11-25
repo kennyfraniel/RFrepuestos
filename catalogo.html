@@ -15,16 +15,38 @@
 </head>
 <body>
 <header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="./">RF <span>repuestos</span></a>
-<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-<nav class="site-nav" data-nav>
-<a href="./">Inicio</a>
-<a class="active" href="catalogo.html">Catálogo</a>
-</nav>
-</div>
-</header>
+  <div class="header-main">
+    <div class="container header-inner">
 
+      <!-- Logo -->
+      <a href="index.html" class="brand">
+        <span class="brand-mark">RF</span>
+        <span class="brand-text">
+          <span class="brand-title">Repuestos</span>
+          <span class="brand-subtitle">Autopartes</span>
+        </span>
+      </a>
+
+      <!-- NAV a la derecha -->
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="catalogo.html" class="nav-link">Catálogo</a>
+      </nav>
+
+      <!-- Toggle mobile -->
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Menú mobile -->
+    <nav class="nav-mobile">
+      <a href="index.html" class="nav-mobile-link">Inicio</a>
+      <a href="catalogo.html" class="nav-mobile-link">Catálogo</a>
+    </nav>
+  </div>
+</header>
 
 <main class="catalog">
 <div class="container">
