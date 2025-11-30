@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Catálogo – RF Repuestos</title>
-<meta name="description" content="Catálogo de autopartes. Renault, Fiat, Citroën y Peugeot. Compra por WhatsApp." />
-<link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css" />
-<link rel="stylesheet" href="assets/css/neon.css">
-<link rel="stylesheet" href="assets/css/theme-dark.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo – RF Repuestos</title>
+  <meta name="description" content="Catálogo de autopartes. Renault, Fiat, Citroën y Peugeot. Compra por WhatsApp." />
+  <link rel="icon" href="favicon.png" type="image/png" sizes="512x512">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/neon.css">
+  <link rel="stylesheet" href="assets/css/theme-dark.css">
 </head>
-<body>
-<header class="site-header">
+<body class="catalog-page">
+
+  <!-- HEADER (mismo estilo que el index) -->
+  <header class="site-header">
   <div class="header-main">
     <div class="container header-inner">
 
@@ -48,56 +50,132 @@
   </div>
 </header>
 
-<main class="catalog">
-<div class="container">
-<h1 class="section-title">Catálogo</h1>
-<div class="filters">
-<div class="filters-left">
-<div class="search">
-<input id="q" type="search" placeholder="Buscar por pieza o modelo…" aria-label="Buscar" />
-</div>
-<fieldset class="brands-filter" role="group" aria-label="Filtrar por marca">
-<label><input type="checkbox" name="brand" value="RENAULT" checked> Renault</label>
-<label><input type="checkbox" name="brand" value="FIAT" checked> Fiat</label>
-<label><input type="checkbox" name="brand" value="CITROEN" checked> Citroën</label>
-<label><input type="checkbox" name="brand" value="PEUGEOT" checked> Peugeot</label>
-<label><input type="checkbox" name="brand" value="VOLKSWAGEN" checked> Volkswagen</label>
-</fieldset>
-</div>
-<div class="filters-right">
-<label class="sort">
-Ordenar:
-<select id="sort">
-  <option value="newest">Novedades</option>
-  <option value="name-asc">Nombre (A–Z)</option>
-  <option value="name-desc">Nombre (Z–A)</option>
-</select>
-</label>
-</div>
-</div>
 
+  <main class="catalog-shell">
 
-<p class="results" id="results-count">Mostrando 0 productos</p>
-<div class="grid grid-3" id="products-grid"><!-- poblado por JS --></div>
-</div>
-</main>
+    <!-- HERO / INTRO DEL CATÁLOGO -->
+    <section class="catalog-hero">
+      <div class="container catalog-hero-inner">
+        <div>
+          <p class="catalog-eyebrow">Catálogo RF Repuestos</p>
+          <h1 class="catalog-title">Buscá el repuesto que necesitás</h1>
+          <p class="catalog-subtitle">
+            Filtrá por marca, usá el buscador y ordená los resultados.
+            Todos los precios y stock se confirman por WhatsApp al momento de la compra.
+          </p>
+        </div>
 
+        <div class="catalog-hero-pill">
+          <span class="pill-label">Tip rápido</span>
+          <p class="pill-text">
+            Si no encontrás el repuesto en el listado, escribinos con marca, modelo y año
+            del auto y lo buscamos por vos.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<footer class="site-footer">
-<div class="container footer-inner">
-<p>© <span id="year"></span> RF Repuestos</p>
-<a class="link" href="./">Volver al inicio</a>
-</div>
+    <!-- LAYOUT PRINCIPAL: FILTROS + RESULTADOS -->
+    <section class="catalog-layout">
+      <div class="container catalog-layout-inner">
+
+        <!-- SIDEBAR: FILTROS (mantengo tus IDs y name/values) -->
+        <aside class="catalog-sidebar">
+          <h2 class="filters-title">Filtros</h2>
+
+          <div class="field">
+            <label for="q" class="field-label">Buscar</label>
+            <input
+              id="q"
+              type="search"
+              placeholder="Buscar por pieza o modelo…"
+              aria-label="Buscar"
+              class="field-input"
+            />
+          </div>
+
+          <fieldset class="brands-filter" role="group" aria-label="Filtrar por marca">
+            <legend class="field-label">Marcas</legend>
+            <div class="brands-list">
+              <label><input type="checkbox" name="brand" value="RENAULT" checked> Renault</label>
+              <label><input type="checkbox" name="brand" value="FIAT" checked> Fiat</label>
+              <label><input type="checkbox" name="brand" value="CITROEN" checked> Citroën</label>
+              <label><input type="checkbox" name="brand" value="PEUGEOT" checked> Peugeot</label>
+              <label><input type="checkbox" name="brand" value="VOLKSWAGEN" checked> Volkswagen</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="sort" class="field-label">Ordenar</label>
+            <select id="sort" class="field-input">
+              <option value="newest">Novedades</option>
+              <option value="name-asc">Nombre (A–Z)</option>
+              <option value="name-desc">Nombre (Z–A)</option>
+            </select>
+          </div>
+
+          <p class="filters-hint">
+            Podés combinar búsqueda, marcas y orden para encontrar más rápido el repuesto.
+          </p>
+        </aside>
+
+        <!-- RESULTADOS -->
+        <div class="catalog-results">
+
+          <header class="catalog-results-header">
+            <!-- MISMO ID QUE TENÍAS ANTES -->
+            <p class="results" id="results-count">Mostrando 0 productos</p>
+          </header>
+
+          <!-- MISMO CONTENEDOR QUE USABA TU JS -->
+          <div class="grid grid-3 products-grid" id="products-grid"><!-- poblado por JS --></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+ <!-- FOOTER -->
+<footer class="rf-footer">
+  <div class="rf-footer-inner">
+    
+    <!-- Barra luminosa -->
+    <div class="rf-footer-bar"></div>
+
+    <!-- Links básicos -->
+    <nav class="rf-footer-nav">
+      <a href="index.html">Inicio</a>
+      <span class="rf-footer-separator">•</span>
+      <a href="catalogo.html">Catálogo</a>
+      <span class="rf-footer-separator">•</span>
+      <a href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+      <span class="rf-footer-separator">•</span>
+      <a href="https://instagram.com/XXXXXXXXXXX" target="_blank" rel="noopener">
+        Instagram
+      </a>
+    </nav>
+
+    <!-- Texto de derechos -->
+    <p class="rf-footer-text">
+      © 2025 RF Repuestos — Todos los derechos reservados.
+    </p>
+  </div>
 </footer>
 
 
-<a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <img src="assets/img/icons/wpp.svg" alt="" aria-hidden="true">
-</a>
+  <a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="assets/img/icons/wpp.svg" alt="" aria-hidden="true">
+  </a>
 
-
-<script src="assets/js/app.js" defer></script>
-<script src="assets/js/config.js" defer></script>
-<script src="assets/js/products.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script>
+    // año del footer (por si no lo tenías en tus JS)
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
